@@ -1,0 +1,8 @@
+{
+  "name": "jheremy-morales",
+  "compatibility_date": "2025-12-09",
+  "main": "dist/index.js", // or wherever your built output is
+  "assets": {
+    "directory": "./dist"
+  }
+}
