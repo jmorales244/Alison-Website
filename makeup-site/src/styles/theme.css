@@ -1,0 +1,26 @@
+/* -------------------------------------
+   Font Theme: Soft Glam (Option #3)
+   Title: Cormorant Garamond
+   Headers: Poppins
+   Body: Nunito
+-------------------------------------- */
+
+:root {
+  /* Fonts */
+  --font-title: "Cormorant Garamond", serif;
+  --font-header: "Poppins", sans-serif;
+  --font-body: "Nunito", sans-serif;
+
+  /* Colors */
+  --color-text-dark: #2b2530;
+  --color-text-medium: #6d5a77;
+  --color-accent: #c05a8b;
+  --color-accent-light: #f7e3ee;
+  --color-bg: #fdf9fb;
+
+  
+  /* Extras */
+  --radius-card: 1.2rem;
+  --radius-photo: 1.5rem;
+  --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
