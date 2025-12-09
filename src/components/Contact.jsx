@@ -23,7 +23,7 @@ function Contact({ whatsappLink }) {
         </div>
         <div>
           <h3>Ubicación</h3>
-          <p>Tehuacán, Puebla (o la ciudad donde esté)</p>
+          <p>Tehuacán, Puebla</p>
         </div>
       </div>
     </section>
