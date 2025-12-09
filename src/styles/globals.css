@@ -602,28 +602,84 @@ button {
   justify-content: center;
 }
 
-/* FOOTER */
+/* =====================
+   FOOTER
+   ===================== */
+
 .footer {
-  padding: 1.5rem 5vw 2rem;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #8b788f;
-  border-top: 1px solid #f0dde7;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  padding: 3rem 1.5rem 1.5rem;
+  background: #121018;
+  color: #fdf7ff;
 }
 
-.footer-small {
-  margin-top: 0.25rem;
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+  gap: 2.5rem;
+  align-items: flex-start;
 }
 
-/* RESPONSIVE */
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 1.4rem;
+  margin-bottom: 0.35rem;
+  opacity: 0.7;
+}
+
+.footer-map-frame {
+  margin-top: 0.6rem;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+  /* keeps map ratio */
+  aspect-ratio: 4 / 3;
+  background: #000;
+}
+
+.footer-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* responsive footer */
 @media (max-width: 800px) {
-  .hero {
-    grid-template-columns: 1fr;
-    padding-top: 2.5rem;
+  .footer {
+    padding: 2.5rem 1.25rem 1.5rem;
   }
 
-  .navbar-links {
-    display: none; /* later we can add a mobile menu */
+  .footer-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-map-frame {
+    aspect-ratio: 3 / 4; /* taller on phone */
   }
 }
+
