@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        © {new Date().getFullYear()} Glam Studio – Maquillaje y peinado
+        © {new Date().getFullYear()} Makeup Studio – Maquillaje y peinado
         profesional.
       </p>
       <p className="footer-small">
