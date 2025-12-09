@@ -1,9 +1,5 @@
 {
   "name": "alison-website",
-  "pages_build_output_dir": "./dist",
-  "compatibility_date": "2025-12-09",
-  "main": "src/index.js",
-  "assets": {
-    "directory": "./dist"
-  }
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2025-12-09"
 }
