@@ -6,7 +6,11 @@ import Booking from "./components/Booking";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+import AdminDashboard from "./pages/AdminDashboard";
+
+import { Routes, Route, Navigate } from "react-router-dom";
+
+function PublicSite() {
   // Shared WhatsApp data
   const whatsAppBusinessID = "525654814212";
   const whatsAppMessage = encodeURIComponent(
@@ -24,6 +28,18 @@ function App() {
       <Contact whatsappLink={whatsappLink} />
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<PublicSite />} />
+      <Route path="/admin" element={<AdminDashboard />} />
+
+      {/* optional: anything else goes home */}
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }
 
